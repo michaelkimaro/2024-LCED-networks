@@ -1,3 +1,6 @@
+
+#tecnhiques that can be be used to analyze networks data
+
 # clear everything in the R environment
 rm(list = ls())
 # restore the library
