@@ -48,8 +48,8 @@ p2 <-AllData |>
        title="Clay layer")
 p2
 p3<- AllData |>
-  group_by(Type,DomPlantName) |>
-  summarize(Count=n()) |>
+  dplyr::group_by(Type,DomPlantName) |>
+  dplyr::summarize(Count=n()) |>
   ggplot(aes(x=Type,y=Count, fill=DomPlantName)) +
   geom_bar(stat="identity") +
   labs(x="Inside or outside depression",
